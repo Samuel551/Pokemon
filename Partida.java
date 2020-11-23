@@ -21,7 +21,7 @@ public class Partida{
 		String usuario;
 		try{
 			System.out.println("\n\n********************************************************\n");
-			System.out.println("POKEMON FUNDAMENTOS DE LENGUAJES DE PROGRAMACIÓN");
+			System.out.println("    POKEMON FUNDAMENTOS DE LENGUAJES DE PROGRAMACIÓN");
 			System.out.println("\n********************************************************\n\n");
 			System.out.println("            Ingrese su nombre: \n            ");
 			nombre = buffer.readLine();

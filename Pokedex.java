@@ -32,6 +32,7 @@ public class Pokedex{
 					System.out.println("*** Cura:"+pokemones[i].getAtaques()[j].getCura());
 					System.out.println("*** Bloqueo:"+pokemones[i].getAtaques()[j].getBloqueo());
 				}
+				System.out.println("**********************");
 			}
 				
 		}
