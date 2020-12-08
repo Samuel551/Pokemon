@@ -14,6 +14,19 @@ public class Combate{
 		indexRival = (int)Math.round(Math.random()*10);
 		this.player2 = pokedexGral.getPokemon(indexRival);
 	}
+	
+	public void ataqueCpu(Pokemon player1,Pokemon player2){
+			int op = (int)Math.round(Math.random()*3);
+		
+			System.out.println("El ataque de "+player1.getNombre()+" rival será: "+player1.getAtaques()[op].getNombre());
+
+
+			player2.recibirAtaque(player1.getAtaques()[op]);
+			System.out.println("\n\n********************************************************\n");
+			System.out.println(player2.getNombre()+" tu nivel de Puntos de Salud es "+player2.getPs());
+			System.out.println("\n********************************************************\n\n");
+		
+	}
 
 	public void ataque(Pokemon player1,Pokemon player2){
 		int op;
@@ -45,6 +58,7 @@ public class Combate{
 				out = indexRival;
 				player1.restaurar();
 				player2.restaurar();
+				player1.ganarexp();
 				break;
 			} 
 			ataque(player2,player1);
