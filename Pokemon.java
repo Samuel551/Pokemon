@@ -64,7 +64,7 @@ public class Pokemon{
 		if(this.exp>=3){
 			this.lvl = this.lvl+1;
 			System.out.println("*** Felicidades ***");
-			System.out.println(getNombre()+"Ha subido de nivel"+ getlvl);
+			System.out.println(getNombre()+"Ha subido de nivel"+ getlvl());
 			this.exp = 0;
 		}
 	}
