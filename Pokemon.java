@@ -4,7 +4,7 @@ public class Pokemon{
 	private boolean capturado;
 	private boolean visto;
 	private int exp;
-	private int lvl;
+	private int nivel;
 	private final int ps_max;
 	private int ps;
 	private int ataque;
@@ -19,6 +19,7 @@ public class Pokemon{
 		this.ataque = SetupPokemon.ataque;
 		this.exp = SetupPokemon.experiencia;
 		this.lvl = SetupPokemon.nivel;
+		this.nivel = SetupPokemon.nivel;
 		this.capturado = false;
 		this.visto = false;
 		for(int i=0;i<SetupPokemon.cantidadAtaques;i++){
@@ -59,13 +60,17 @@ public class Pokemon{
 	public int getlvl() {
 		return lvl;
 	}
-	public void ganarExp(){
+	public int nivel(){
+		return nivel;
+	}
+	public int ganar_exp(){
 		this.exp = getExp()+1;
 		if(this.exp>=3){
-			this.nvl = this.nvl+1;
-			System.out.println("\n**** ENHORABUENA ***\n");
-			System.out.println(getNombre()+" ha subido al nivel "+getlvl()+"\n");
-			this.exp = 0;
+			this.lvl = this.lvl+1;
+			System.out.println("*** Felicidades ***");
+			System.out.println(getNombre()+"Ha subido de nivel"+ getlvl);
+			this.exp = 0
 		}
 	}
+
 }
