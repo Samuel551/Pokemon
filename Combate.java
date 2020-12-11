@@ -59,7 +59,6 @@ public class Combate{
 				player1.restaurar();
 				player2.restaurar();
 				player1.ganar_exp;
-
 				break;
 			} 
 			ataque(player2,player1);
