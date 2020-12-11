@@ -56,10 +56,7 @@ public class Pokemon{
 	public int getExp(){
 		return this.exp;
 	}
-	public int getlvl() {
-		return lvl;
-	}
-	public int nivel(){
+		public int nivel(){
 		return nivel;
 	}
 	public int ganar_exp(){
