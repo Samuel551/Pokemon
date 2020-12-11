@@ -6,7 +6,7 @@ public class Combate{
 	private Pokemon player1;
 	private Pokemon player2;
 	private int indexRival;
-	ganar_exp=new Pokemon();
+	Pokemon ganar_exp= new Pokemon;
 	BufferedReader buffer;
 
 	Combate(Pokemon player1, Pokedex pokedexGral){
