@@ -18,7 +18,6 @@ public class Pokemon{
 		this.ps = this.ps_max;
 		this.ataque = SetupPokemon.ataque;
 		this.exp = SetupPokemon.experiencia;
-		this.lvl = SetupPokemon.nivel;
 		this.nivel = SetupPokemon.nivel;
 		this.capturado = false;
 		this.visto = false;
