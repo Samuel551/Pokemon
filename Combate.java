@@ -58,7 +58,8 @@ public class Combate{
 				out = indexRival;
 				player1.restaurar();
 				player2.restaurar();
-				player1.ganarexp();
+				player1.ganar_exp;
+
 				break;
 			} 
 			ataque(player2,player1);
