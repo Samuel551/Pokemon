@@ -5,8 +5,8 @@ import java.io.*;
 public class Combate{
 	private Pokemon player1;
 	private Pokemon player2;
+	private Pokemon pokemon;
 	private int indexRival;
-	Pokemon ganar_exp= new Pokemon;
 	BufferedReader buffer;
 
 	Combate(Pokemon player1, Pokedex pokedexGral){
@@ -59,7 +59,7 @@ public class Combate{
 				out = indexRival;
 				player1.restaurar();
 				player2.restaurar();
-				player1.ganar_exp();
+				pokemon.ganar_exp();
 				break;
 			} 
 			ataque(player2,player1);
